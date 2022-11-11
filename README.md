@@ -17,7 +17,12 @@ Para entender o que está sendo feito nos códigos é necessário atender aos se
 ## 💻 Executando
 
 Para executar o projeto corretamente, utilize o seguinte comando:
-
+ ```
+ npm install
+ ```
+ ```
+ npm start
+ ```
 
 ## 🤝 Colaborador
 
