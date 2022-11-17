@@ -2,7 +2,7 @@ import { FaUserNinja } from 'react-icons/fa';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 
-import ClientUsers from '../../services/user.js';
+import ClientFunc from '../../services/func.js';
 
 import Sidebar from '../../components/Sidebar';
 import Title from '../../components/Title';
@@ -22,11 +22,11 @@ export default function ListEmail() {
             email: email,
         }
 
-        const response = await ClientUsers.listEmailUser(data);
+        const response = await ClientFunc.listEmailFunc(data);
 
         if (response.status === 200) {
             setUsers(response.data)
-            toast.success('Usuários listados com sucesso!');
+            toast.success('Funcionários listados com sucesso!');
         } else {
             toast.error('Ops algo deu errado!');
         }
@@ -37,7 +37,7 @@ export default function ListEmail() {
             <Sidebar />
 
             <div className="content">
-                <Title name="Listar por Email">
+                <Title name="Listar funcionários por Email">
                     <FaUserNinja size={30} />
                 </Title>
 

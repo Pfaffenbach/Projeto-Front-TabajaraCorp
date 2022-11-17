@@ -2,7 +2,7 @@ import { FaUserNinja } from 'react-icons/fa';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 
-import ClientUsers from '../../services/user.js';
+import ClientFunc from '../../services/func.js';
 
 import Sidebar from '../../components/Sidebar';
 import Title from '../../components/Title';
@@ -20,10 +20,10 @@ export default function Delete() {
             email: email,
         }
 
-        const update = await ClientUsers.deleteUser(data);
+        const update = await ClientFunc.deleteFunc(data);
         console.log('update', update);
         if (update.status === 200) {
-            toast.success('Usuário deletado com sucesso!');
+            toast.success('Funcionário deletado com sucesso!');
         } else {
             toast.error('Ops algo deu errado!');
         }
@@ -34,7 +34,7 @@ export default function Delete() {
             <Sidebar />
 
             <div className="content">
-                <Title name="Deletar usuário">
+                <Title name="Deletar Funcionário">
                     <FaUserNinja size={30} />
                 </Title>
 

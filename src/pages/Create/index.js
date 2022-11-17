@@ -2,7 +2,7 @@ import { FaUserNinja } from 'react-icons/fa';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 
-import ClientUsers from '../../services/user.js';
+import ClientFunc from '../../services/func.js';
 
 import Sidebar from '../../components/Sidebar';
 import Title from '../../components/Title';
@@ -24,9 +24,9 @@ export default function Create() {
             senha: senha,
         }
 
-        const update = await ClientUsers.createUser(data);
+        const update = await ClientFunc.createFunc(data);
         if (update.status === 200) {
-            toast.success('Usuário criado com sucesso!');
+            toast.success('Funcionário criado com sucesso!');
         } else {
             toast.error('Ops algo deu errado!');
         }
@@ -37,7 +37,7 @@ export default function Create() {
             <Sidebar />
 
             <div className="content">
-                <Title name="Registrar novo usuário">
+                <Title name="Registrar novo funcionário">
                     <FaUserNinja size={30} />
                 </Title>
 

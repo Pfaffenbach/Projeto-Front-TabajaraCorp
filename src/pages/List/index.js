@@ -2,7 +2,7 @@ import { FaUserNinja } from 'react-icons/fa';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 
-import ClientUsers from '../../services/user.js';
+import ClientFunc from '../../services/func.js';
 
 import Sidebar from '../../components/Sidebar';
 import Title from '../../components/Title';
@@ -17,11 +17,11 @@ export default function List() {
     async function List(e) {
         e.preventDefault();
 
-        const response = await ClientUsers.listUser();
+        const response = await ClientFunc.listFunc();
 
         if (response.status === 200) {
             setUsers(response.data)
-            toast.success('Usuários resgatados com sucesso!');
+            toast.success('Funcionários resgatados com sucesso!');
         } else {
             toast.error('Ops algo deu errado!');
         }
@@ -32,7 +32,7 @@ export default function List() {
             <Sidebar />
 
             <div className="content">
-                <Title name="Listar Usuários">
+                <Title name="Listar Funcionários">
                     <FaUserNinja size={30} />
                 </Title>
 

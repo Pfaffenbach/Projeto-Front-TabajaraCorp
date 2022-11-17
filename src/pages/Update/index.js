@@ -2,7 +2,7 @@ import { FaUserNinja } from 'react-icons/fa';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 
-import ClientUsers from '../../services/user.js';
+import ClientFunc from '../../services/func.js';
 
 import Sidebar from '../../components/Sidebar';
 import Title from '../../components/Title';
@@ -22,9 +22,9 @@ export default function Update() {
             email: email,
         }
 
-        const update = await ClientUsers.updateUser(data);
+        const update = await ClientFunc.updateFunc(data);
         if (update.status === 200) {
-            toast.success('Usuário atualizado com sucesso!');
+            toast.success('Funcionário atualizado com sucesso!');
         } else {
             toast.error('Ops algo deu errado!');
         }
@@ -36,7 +36,7 @@ export default function Update() {
             <Sidebar />
 
             <div className="content">
-                <Title name="Atualizar usuário">
+                <Title name="Atualizar Funcionário">
                     <FaUserNinja size={30} />
                 </Title>
 
