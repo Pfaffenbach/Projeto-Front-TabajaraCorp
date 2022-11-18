@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     width: 200px;
-    background-color: #181C2E;
+    background-color: #9b9b9b;
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -10,7 +10,7 @@
 
 .sidebar div{
     background: url('../../assets/cover.png');
-    background-color: #181C2E;
+    background-color: #2e1818;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -46,7 +46,7 @@
 }
 
 .sidebar a:hover{
-    background-color: #121212;
+    background-color: #0206fd;
     color: white;
 }
 

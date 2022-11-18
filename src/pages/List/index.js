@@ -1,4 +1,4 @@
-import { FaUserNinja } from 'react-icons/fa';
+import { FaUsers } from 'react-icons/fa';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 
@@ -33,7 +33,7 @@ export default function List() {
 
             <div className="content">
                 <Title name="Listar Funcionários">
-                    <FaUserNinja size={30} />
+                    <FaUsers size={30} />
                 </Title>
 
                 <div className="container">

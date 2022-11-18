@@ -1,4 +1,4 @@
-import { FaUserNinja } from 'react-icons/fa';
+import { FaUserSecret } from 'react-icons/fa';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 
@@ -38,7 +38,7 @@ export default function ListEmail() {
 
             <div className="content">
                 <Title name="Listar funcionários por Email">
-                    <FaUserNinja size={30} />
+                    <FaUserSecret size={30} />
                 </Title>
 
                 <div className="container">

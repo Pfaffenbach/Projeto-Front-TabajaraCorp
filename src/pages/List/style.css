@@ -18,7 +18,7 @@ form button{
     height: 35px;
     border: 0;
     border-radius: 7px;
-    background-color: #181C2E;
+    background-color: #000000;
     color: white;
     font-size: 1.3em;
 }
@@ -116,7 +116,7 @@ form button{
 
 .fl-table thead th {
     color: #ffffff;
-    background: blue;
+    background: rgb(255, 0, 0);
 }
 
 
