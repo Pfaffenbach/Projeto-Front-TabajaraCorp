@@ -11,7 +11,7 @@ export default function Sidebar() {
             </div>
             <Link to="/">
                 <FaUserPlus color="white" size={24} />
-                Criar
+                Cadastrar
             </Link>
             <Link to="/update">
                 <FaUserEdit color="white" size={24} />
